@@ -88,7 +88,7 @@ export function Hero() {
               >
                 Request Demo
               </a>
-              <Link to="/product" className="flex items-center gap-2 group">
+              <Link to="/Product" className="flex items-center gap-2 group">
                 <span className="text-sm font-semibold">NovaIQ</span>
                 <div
                   aria-label="Start"

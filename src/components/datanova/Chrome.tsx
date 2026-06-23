@@ -64,7 +64,7 @@ export function Nav() {
             ))}
           </nav>
           <div className="flex items-center gap-2">
-            <Link to="/product" className="hidden lg:inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-[0_8px_24px_-6px_rgba(245,165,36,0.5)] transition hover:shadow-[0_12px_32px_-6px_rgba(245,165,36,0.7)]">
+            <Link to="/Product" className="hidden lg:inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-[0_8px_24px_-6px_rgba(245,165,36,0.5)] transition hover:shadow-[0_12px_32px_-6px_rgba(245,165,36,0.7)]">
               NovaIQ
               <ArrowRight className="h-3.5 w-3.5" />
             </Link>
@@ -88,7 +88,7 @@ export function Nav() {
                   </a>
                 ))}
                 <div className="mt-2 pt-3 border-t border-border">
-                  <Link to="/product" onClick={() => setOpen(false)} className="flex items-center justify-center gap-1.5 w-full rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-[0_8px_24px_-6px_rgba(245,165,36,0.5)] transition hover:shadow-[0_12px_32px_-6px_rgba(245,165,36,0.7)]">
+                  <Link to="/Product" onClick={() => setOpen(false)} className="flex items-center justify-center gap-1.5 w-full rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-[0_8px_24px_-6px_rgba(245,165,36,0.5)] transition hover:shadow-[0_12px_32px_-6px_rgba(245,165,36,0.7)]">
                     NovaIQ
                     <ArrowRight className="h-4 w-4" />
                   </Link>
@@ -168,7 +168,7 @@ const FOOTER_COLS = [
     title: "Quick Links", 
     items: [
       { name: "About", href: "/#about" },
-      { name: "Product", href: "/product" },
+      { name: "Product", href: "/Product" },
       { name: "Pricing", href: "/#pricing" },
       { name: "Contact", href: "/#contact" }
     ] 
