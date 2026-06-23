@@ -53,7 +53,7 @@ export function DataChaos() {
             </Reveal>
             <Reveal delay={0.1}>
               <h2 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-foreground">
-                Why enterprise data fails<br className="hidden sm:block" /> to <span className="text-primary">drive decisions</span>
+                Five Cracks In Every <span className="text-primary">Enterprise Data.</span>
               </h2>
             </Reveal>
             <Reveal delay={0.2} className="max-w-xl">
@@ -370,12 +370,12 @@ export function Capabilities() {
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="mt-6 text-4xl sm:text-5xl font-bold leading-[1.1] tracking-tight text-foreground">
-              Core Platform <span className="text-primary">Capabilities</span>
+              Architecture For Autonomous <span className="text-primary">Intelligence</span>
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-              Six pillars powering enterprise-grade intelligence — from raw data to autonomous action.
+              Six core systems powering data unification, predictive analytics, and real-time decision automation at enterprise scale.
             </p>
           </Reveal>
         </div>
@@ -582,7 +582,7 @@ export function Industries() {
         <div className="max-w-2xl">
           <Reveal><SectionLabel>Industries</SectionLabel></Reveal>
           <Reveal delay={0.1}>
-            <h2 className="mt-5 text-4xl sm:text-5xl font-bold">Solutions across <span className="text-primary">every enterprise</span></h2>
+            <h2 className="mt-5 text-4xl sm:text-5xl font-bold">High Stakes <span className="text-primary">Speak DatanovaIQ </span></h2>
           </Reveal>
         </div>
 
@@ -736,31 +736,37 @@ export function DemoVideoBanner() {
 
 const PRICING_TIERS = [
   {
-    name: "Starter",
-    price: "$499",
+    name: "IQ Starter",
+    price: "$59",
     period: "/mo",
-    desc: "Perfect for growing teams building their first data fabric.",
+    desc: "For small teams getting their first unified data view",
     features: ["Up to 5 data connectors", "1TB Data Processing", "Basic AI Analytics", "Standard Support"],
-    buttonText: "Start Free Trial",
+    buttonText: "Get Started",
     popular: false,
+    link: "https://buy.stripe.com/test_8x26oz47OdYT8Iq7K25AQ01",
+    isExternal: true,
   },
   {
-    name: "Professional",
-    price: "$1,499",
+    name: "IQ Pro",
+    price: "$159",
     period: "/mo",
-    desc: "Advanced intelligence and automation for scaling enterprises.",
+    desc: "For growing teams needing predictive analytics + integrations",
     features: ["Unlimited connectors", "10TB Data Processing", "Predictive Intelligence", "Decision Automation", "Priority Support"],
     buttonText: "Get Started",
     popular: true,
+    link: "https://buy.stripe.com/test_4gM4grfQw1c74sa2pI5AQ00",
+    isExternal: true,
   },
   {
-    name: "Enterprise",
+    name: "IQ Enterprise",
     price: "Custom",
     period: "",
-    desc: "Mission-critical deployment with sovereign governance.",
+    desc: "For large orgs needing a full platform, dedicated support, and custom SLAs",
     features: ["Unlimited Data Processing", "Custom AI Models (BYOM)", "VPC Peering & BYOK", "Dedicated Solutions Architect", "24/7 SLA Support"],
     buttonText: "Contact Sales",
     popular: false,
+    link: "#contact",
+    isExternal: false,
   }
 ];
 
@@ -771,7 +777,7 @@ export function Pricing() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <Reveal><SectionLabel>Pricing</SectionLabel></Reveal>
           <Reveal delay={0.1}>
-            <h2 className="mt-5 text-4xl sm:text-5xl font-bold">Simple, transparent <span className="text-primary">pricing.</span></h2>
+            <h2 className="mt-5 text-4xl sm:text-5xl font-bold">Pick Your Level Of <span className="text-primary">Intelligence.</span></h2>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-5 text-muted-foreground text-lg">
@@ -809,9 +815,14 @@ export function Pricing() {
                   ))}
                 </ul>
 
-                <button className={`w-full rounded-xl py-4 font-semibold transition-all duration-300 shadow-sm ${tier.popular ? 'bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_4px_14px_rgba(242,107,42,0.4)]' : 'bg-accent text-foreground hover:bg-accent/80 hover:shadow-md'}`}>
+                <a 
+                  href={tier.link}
+                  target={tier.isExternal ? "_blank" : undefined}
+                  rel={tier.isExternal ? "noopener noreferrer" : undefined}
+                  className={`block text-center w-full rounded-xl py-4 font-semibold transition-all duration-300 shadow-sm ${tier.popular ? 'bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-[0_4px_14px_rgba(242,107,42,0.4)]' : 'bg-accent text-foreground hover:bg-accent/80 hover:shadow-md'}`}
+                >
                   {tier.buttonText}
-                </button>
+                </a>
               </div>
             </Reveal>
           ))}
@@ -826,47 +837,47 @@ export function Pricing() {
 const TESTIMONIALS = [
   {
     id: 1,
-    name: "SARAH JENKINS",
-    shortName: "SARAH",
-    role: "VP OF ENGINEERING",
-    company: "STRIPE",
+    name: "RACHEL BENNETT",
+    shortName: "RACHEL",
+    role: "VP OF OPERATIONS",
+    company: "MERIDIAN FINANCIAL GROUP",
     quote: "DatanovaIQ completely transformed how we handle fragmented data. We've reduced insight latency from days to mere milliseconds.",
     img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 2,
-    name: "MICHAEL CHANG",
-    shortName: "MICHAEL",
-    role: "CHIEF DATA OFFICER",
-    company: "AIRBNB",
-    quote: "The autonomous intelligence capabilities allowed our team to scale operations without exponentially scaling our engineering headcount.",
+    name: "TYLER BROOKS",
+    shortName: "TYLER",
+    role: "HEAD OF DATA ENGINEERING",
+    company: "VORTEX HEALTH SYSTEMS",
+    quote: "We stopped stitching spreadsheets the day we onboarded DatanovaIQ. Our entire reporting pipeline now runs itself, end to end.",
     img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 3,
-    name: "EMILY ROSS",
-    shortName: "EMILY",
-    role: "HEAD OF ANALYTICS",
-    company: "SPOTIFY",
-    quote: "We needed a platform that could govern exabytes of data while democratizing AI access. DatanovaIQ delivered exactly that.",
+    name: "OLIVIA SANDERS",
+    shortName: "OLIVIA",
+    role: "CHIEF ANALYTICS OFFICER",
+    company: "BRIGHTLINE RETAIL CO.",
+    quote: "Forecasting used to be a guessing game. DatanovaIQ gave us predictive accuracy we can actually build a strategy around.",
     img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 4,
-    name: "DAVID KUMAR",
-    shortName: "DAVID",
-    role: "DIRECTOR OF AI",
-    company: "NETFLIX",
-    quote: "Integrating our predictive models with their decision pipelines was seamless. It's the most robust data fabric we've ever evaluated.",
+    name: "BRANDON WALSH",
+    shortName: "BRANDON",
+    role: "DIRECTOR OF IT INFRASTRUCTURE",
+    company: "CALDWELL LOGISTICS",
+    quote: "Every system we own finally talks to each other. DatanovaIQ didn't replace our stack — it made it actually work.",
     img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 5,
-    name: "JESSICA VANCE",
-    shortName: "JESSICA",
-    role: "CTO",
-    company: "UBER",
-    quote: "The real-time autonomous operations are game-changing. Our systems now react to supply chain anomalies before humans even notice them.",
+    name: "HANNAH FOSTER",
+    shortName: "HANNAH",
+    role: "SENIOR BUSINESS INTELLIGENCE LEAD",
+    company: "NORTHGATE GOVERNMENT SERVICES",
+    quote: "Our leadership team gets real-time answers now, not week-old reports. That shift alone changed how fast we move.",
     img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80"
   },
 ];
@@ -879,13 +890,14 @@ export function Testimonials() {
       <div className="absolute inset-0 bg-gradient-to-b from-surface via-background to-surface" />
       <div className="relative w-full max-w-[1400px] mx-auto px-6 sm:px-10 z-10">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <Reveal>
-            <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-tight">
-              Over <span className="text-primary">1000+</span> enterprise leaders trust us
+          <Reveal><SectionLabel>Testimonials</SectionLabel></Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="mt-5 text-4xl sm:text-5xl font-bold">
+              Decisions Speak Louder Than <span className="text-primary">Demos</span>
             </h2>
           </Reveal>
-          <Reveal delay={0.1}>
-            <p className="mt-4 text-muted-foreground text-sm sm:text-base">
+          <Reveal delay={0.2}>
+            <p className="mt-5 text-muted-foreground text-lg">
               DatanovaIQ gives you the autonomous intelligence and capabilities you need to create a truly scalable enterprise data ecosystem.
             </p>
           </Reveal>
@@ -956,7 +968,7 @@ export function Testimonials() {
 
 const FAQS = [
   { q: "How long does implementation take?", a: "Most enterprise deployments take 4-8 weeks depending on the complexity of legacy systems being integrated." },
-  { q: "What data sources do you support?", a: "We support over 150+ native connectors including SAP, Salesforce, Oracle, Snowflake, AWS, Azure, and custom REST APIs." },
+  { q: "What data sources do you support?", a: "We support over 150+ native connectors, including SAP, Salesforce, Oracle, Snowflake, Azure, and custom REST APIs." },
   { q: "Is DatanovaIQ secure enough for healthcare/finance?", a: "Yes. Our platform is SOC2 Type II, HIPAA compliant, and supports VPC peering and bring-your-own-key (BYOK) encryption." },
   { q: "Do I need a team of data engineers to run this?", a: "No. While built for engineers, the platform is designed to be autonomous. Once pipelines are set, business users can operate via natural language." },
   { q: "How is pricing structured?", a: "We use a capacity-based model (compute and storage) rather than seat-based, allowing unlimited users to access intelligence." }
@@ -969,7 +981,7 @@ export function FAQSection() {
         <div className="text-center mb-16">
           <Reveal><SectionLabel>FAQ</SectionLabel></Reveal>
           <Reveal delay={0.1}>
-            <h2 className="mt-5 text-4xl sm:text-5xl font-bold">Frequently Asked <span className="text-primary">Questions</span></h2>
+            <h2 className="mt-5 text-4xl sm:text-5xl font-bold">No Jargon. <span className="text-primary">Just Answers.</span></h2>
           </Reveal>
         </div>
 
@@ -1204,12 +1216,12 @@ export function Integrations() {
         <Reveal><SectionLabel>Ecosystem</SectionLabel></Reveal>
         <Reveal delay={0.1}>
           <h2 className="mt-5 text-4xl sm:text-5xl font-bold tracking-tight">
-            Connects to everything.<br/><span className="text-primary">Replaces nothing.</span>
+            Your Stack Stays and<br/><span className="text-primary">Intelligence Grows</span>
           </h2>
         </Reveal>
         <Reveal delay={0.2}>
           <p className="mt-4 text-muted-foreground text-sm sm:text-base max-w-2xl mx-auto">
-            150+ native connectors to integrate seamlessly into your existing data stack within minutes.
+            A growing library of native connectors, built to integrate into your existing stack in minutes.
           </p>
         </Reveal>
       </div>

@@ -65,7 +65,7 @@ export function Nav() {
           </nav>
           <div className="flex items-center gap-2">
             <Link to="/product" className="hidden lg:inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-[0_8px_24px_-6px_rgba(245,165,36,0.5)] transition hover:shadow-[0_12px_32px_-6px_rgba(245,165,36,0.7)]">
-              Request Demo
+              NovaIQ
               <ArrowRight className="h-3.5 w-3.5" />
             </Link>
             <button onClick={() => setOpen((v) => !v)} className="lg:hidden rounded-full border border-border p-2" aria-label="Menu">
@@ -89,7 +89,7 @@ export function Nav() {
                 ))}
                 <div className="mt-2 pt-3 border-t border-border">
                   <Link to="/product" onClick={() => setOpen(false)} className="flex items-center justify-center gap-1.5 w-full rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-[0_8px_24px_-6px_rgba(245,165,36,0.5)] transition hover:shadow-[0_12px_32px_-6px_rgba(245,165,36,0.7)]">
-                    Request Demo
+                    NovaIQ
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>

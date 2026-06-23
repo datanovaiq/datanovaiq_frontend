@@ -60,17 +60,16 @@ export function Hero() {
           <Reveal delay={0.1}>
             <h1 className="mt-5 font-display font-bold leading-[1.05] tracking-tight text-foreground
                            text-4xl sm:text-5xl md:text-6xl lg:text-[3.75rem] xl:text-[4.25rem]">
-              The Intelligent{" "}
-              <span style={{ color: "var(--primary)" }}>Data Platform</span>{" "}
-              for Enterprise AI
+              Fragmented Data <br />
+              Into <span style={{ color: "var(--primary)" }}>Real-Time</span> <br />
+              Decisions
             </h1>
           </Reveal>
 
           <Reveal delay={0.2}>
             <p className="mt-5 max-w-[480px] leading-relaxed text-base sm:text-lg"
               style={{ color: "var(--muted-foreground)" }}>
-              Connect fragmented enterprise systems, activate AI-driven analytics,
-              and transform data into real-time business intelligence.
+              DatanovaIQ connects your data, finds the patterns, and shows you what to do next.
             </p>
           </Reveal>
 
@@ -90,7 +89,7 @@ export function Hero() {
                 Request Demo
               </a>
               <Link to="/product" className="flex items-center gap-2 group">
-                <span className="text-sm font-semibold">Learn more</span>
+                <span className="text-sm font-semibold">NovaIQ</span>
                 <div
                   aria-label="Start"
                   className="grid h-11 w-11 place-items-center rounded-full
